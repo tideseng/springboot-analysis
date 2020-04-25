@@ -1,0 +1,4 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /quick # Tomcat started on port(s): 8088 (http) with context path '/quick'
