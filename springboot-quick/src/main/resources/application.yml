@@ -1,4 +1,23 @@
+spring:
+  profiles:
+    active: dev
+
 server:
-  port: 8088
   servlet:
-    context-path: /quick # Tomcat started on port(s): 8088 (http) with context path '/quick'
+    context-path: /quick
+
+user:
+  username: 佳欢 # user.name是系统内置属性，不要使用，否则会有冲突
+  age: 17
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8088 # Tomcat started on port(s): 8088 (http) with context path '/quick'
+---
+spring:
+  profiles: test
+server:
+  port: 8089 # Tomcat started on port(s): 8089 (http) with context path '/quick'
+
