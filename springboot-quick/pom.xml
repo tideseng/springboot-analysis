@@ -42,6 +42,18 @@
             <artifactId>springboot-spring-factories</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!--自定义starter-->
+        <dependency>
+            <groupId>com.tideseng</groupId>
+            <artifactId>format-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.41</version>
+        </dependency>
     </dependencies>
 
     <build>
