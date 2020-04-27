@@ -1,0 +1,13 @@
+management:
+  server:
+    port: 8899 # 监控的独立端口
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 打开所有端点（如：loggers、beans、dump、mappings、conditions、shutdown）
+  endpoint:
+      health:
+        show-details: always # 显示当前端口的健康检查详情(数据库、内存等)
+      shutdown:
+        enabled: true # 可通过http链接关闭应用(不建议使用)
+
